@@ -1,13 +1,13 @@
 class EmployeesController < ApplicationController
 
   def index
-    @employees = Employee.all
-    render json: @employees
+    @employees = Employee.active.alphabetical.all
+    render json: EmployeeSerializer.new(@employees).serialized_json
   end
 
-  def show
+  def spotlight
     @employee = Employee.find(params[:id])
-    render json: @employee
+    render json: EmployeeSpotlightSerializer.new(@employee).serialized_json
   end
 
 end

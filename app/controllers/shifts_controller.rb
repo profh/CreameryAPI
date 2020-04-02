@@ -1,13 +1,14 @@
 class ShiftsController < ApplicationController
 
-  def index
-    @shifts = Shift.all
-    render json: @shifts
+  def upcoming
+    @store = Store.find(params[:id])
+    @upcoming_shifts = @store.shifts.upcoming.chronological
+    render json: ShiftUpcomingSerializer.new(@upcoming_shifts).serialized_json
   end
 
   def show
     @shift = Shift.find(params[:id])
-    render json: @shift
+    render json: ShiftSerializer.new(@shift).serialized_json
   end
 
 end
