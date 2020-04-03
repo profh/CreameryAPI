@@ -1,0 +1,38 @@
+//> curl -X GET -H "Accept: application/json" "http://localhost:3000/shifts/6" | jsonpp
+
+{
+    "data": {
+        "id": "6",
+        "type": "shift",
+        "attributes": {
+            "store": {
+                "data": {
+                    "id": "2",
+                    "type": "store",
+                    "attributes": {
+                        "name": "Oakland"
+                    }
+                }
+            },
+            "employee": {
+                "data": {
+                    "id": "6",
+                    "type": "employee",
+                    "attributes": {
+                        "name": "Janeway, Kathryn",
+                        "role": "Manager",
+                        "pay_grade": "M1",
+                        "pay_rate": 20.75,
+                        "over_18": true
+                    }
+                }
+            },
+            "date": "2020-04-03",
+            "start_time": "11:00",
+            "end_time": "14:00",
+            "duration": "N/A",
+            "report_completed": false,
+            "jobs_worked": []
+        }
+    }
+}

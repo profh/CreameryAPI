@@ -17,4 +17,8 @@ class ShiftEmployeeSerializer
   attribute :pay_rate do |object|
     object.current_pay_rate
   end
+
+  attribute :over_18 do |object|
+    object.over_18?
+  end
 end

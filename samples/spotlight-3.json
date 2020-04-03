@@ -1,0 +1,79 @@
+//> curl -X GET -H "Accept: application/json" "http://localhost:3000/spotlight/3" | jsonpp
+
+{
+    "data": {
+        "id": "3",
+        "type": "employee_spotlight",
+        "attributes": {
+            "name": "Ralph Wilson",
+            "current_store": "Oakland",
+            "role": "Employee",
+            "phone": "949-096-8234",
+            "date_of_birth": "April 03, 2004",
+            "assignment_history": [
+                {
+                    "data": {
+                        "id": "2",
+                        "type": "assignment",
+                        "attributes": {
+                            "store": "Oakland",
+                            "pay_grade": "C1",
+                            "start_date": "2019-06-03",
+                            "end_date": null
+                        }
+                    }
+                }
+            ],
+            "shifts_at_current_assignment": [
+                {
+                    "data": {
+                        "id": "1",
+                        "type": "shift",
+                        "attributes": {
+                            "date": "2020-03-31",
+                            "status": "finished",
+                            "start_time": "11:00",
+                            "end_time": "14:00"
+                        }
+                    }
+                },
+                {
+                    "data": {
+                        "id": "2",
+                        "type": "shift",
+                        "attributes": {
+                            "date": "2020-04-01",
+                            "status": "finished",
+                            "start_time": "12:00",
+                            "end_time": "16:00"
+                        }
+                    }
+                },
+                {
+                    "data": {
+                        "id": "3",
+                        "type": "shift",
+                        "attributes": {
+                            "date": "2020-04-02",
+                            "status": "finished",
+                            "start_time": "13:00",
+                            "end_time": "14:00"
+                        }
+                    }
+                },
+                {
+                    "data": {
+                        "id": "4",
+                        "type": "shift",
+                        "attributes": {
+                            "date": "2020-04-03",
+                            "status": "pending",
+                            "start_time": "13:00",
+                            "end_time": "14:00"
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}

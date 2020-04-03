@@ -1,0 +1,41 @@
+//> curl -X GET -H "Accept: application/json" "http://localhost:3000/shifts/2" | jsonpp
+
+{
+    "data": {
+        "id": "2",
+        "type": "shift",
+        "attributes": {
+            "store": {
+                "data": {
+                    "id": "2",
+                    "type": "store",
+                    "attributes": {
+                        "name": "Oakland"
+                    }
+                }
+            },
+            "employee": {
+                "data": {
+                    "id": "3",
+                    "type": "employee",
+                    "attributes": {
+                        "name": "Wilson, Ralph",
+                        "role": "Employee",
+                        "pay_grade": "C1",
+                        "pay_rate": 9.75,
+                        "over_18": false
+                    }
+                }
+            },
+            "date": "2020-04-01",
+            "start_time": "12:00",
+            "end_time": "16:00",
+            "duration": 4.0,
+            "report_completed": true,
+            "jobs_worked": [
+                "Cashier",
+                "Mopping"
+            ]
+        }
+    }
+}

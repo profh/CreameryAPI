@@ -19,6 +19,14 @@ class ShiftSerializer
     object.end_time.strftime("%H:%M")
   end
 
+  attribute :duration do |object|
+    object.status == 'finished' ? object.duration : "N/A"
+  end
+
+  attribute :report_completed do |object|
+    object.report_completed?
+  end
+
   attribute :jobs_worked do |object|
     object.jobs.alphabetical.map do |job|
       job.name

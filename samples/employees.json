@@ -1,0 +1,159 @@
+//> curl -X GET -H "Accept: application/json" "http://localhost:3000/employees" | jsonpp
+
+{
+    "data": [
+        {
+            "id": "2",
+            "type": "employee",
+            "attributes": {
+                "name": "Crawford, Cindy",
+                "phone": "682-473-1405",
+                "age": 17,
+                "role": "Employee",
+                "current_assignment": {
+                    "data": {
+                        "id": "3",
+                        "type": "assignment",
+                        "attributes": {
+                            "store": "CMU",
+                            "pay_grade": "C1",
+                            "as_of": "February 03, 2019"
+                        }
+                    }
+                },
+                "recent_shifts": []
+            }
+        },
+        {
+            "id": "1",
+            "type": "employee",
+            "attributes": {
+                "name": "Gruberman, Ed",
+                "phone": "683-435-0532",
+                "age": 19,
+                "role": "Employee",
+                "current_assignment": {
+                    "data": null
+                },
+                "recent_shifts": []
+            }
+        },
+        {
+            "id": "7",
+            "type": "employee",
+            "attributes": {
+                "name": "Heimann, Alex",
+                "phone": "505-444-3120",
+                "age": 19,
+                "role": "Admin",
+                "current_assignment": {
+                    "data": null
+                },
+                "recent_shifts": []
+            }
+        },
+        {
+            "id": "6",
+            "type": "employee",
+            "attributes": {
+                "name": "Janeway, Kathryn",
+                "phone": "843-252-2436",
+                "age": 30,
+                "role": "Manager",
+                "current_assignment": {
+                    "data": {
+                        "id": "6",
+                        "type": "assignment",
+                        "attributes": {
+                            "store": "Oakland",
+                            "pay_grade": "M1",
+                            "as_of": "June 03, 2019"
+                        }
+                    }
+                },
+                "recent_shifts": []
+            }
+        },
+        {
+            "id": "5",
+            "type": "employee",
+            "attributes": {
+                "name": "Sisko, Ben",
+                "phone": "412-268-2323",
+                "age": 19,
+                "role": "Manager",
+                "current_assignment": {
+                    "data": {
+                        "id": "5",
+                        "type": "assignment",
+                        "attributes": {
+                            "store": "CMU",
+                            "pay_grade": "M2",
+                            "as_of": "October 03, 2019"
+                        }
+                    }
+                },
+                "recent_shifts": []
+            }
+        },
+        {
+            "id": "3",
+            "type": "employee",
+            "attributes": {
+                "name": "Wilson, Ralph",
+                "phone": "949-096-8234",
+                "age": 16,
+                "role": "Employee",
+                "current_assignment": {
+                    "data": {
+                        "id": "2",
+                        "type": "assignment",
+                        "attributes": {
+                            "store": "Oakland",
+                            "pay_grade": "C1",
+                            "as_of": "June 03, 2019"
+                        }
+                    }
+                },
+                "recent_shifts": [
+                    {
+                        "data": {
+                            "id": "1",
+                            "type": "shift",
+                            "attributes": {
+                                "date": "2020-03-31",
+                                "status": "finished",
+                                "start_time": "11:00",
+                                "end_time": "14:00"
+                            }
+                        }
+                    },
+                    {
+                        "data": {
+                            "id": "2",
+                            "type": "shift",
+                            "attributes": {
+                                "date": "2020-04-01",
+                                "status": "finished",
+                                "start_time": "12:00",
+                                "end_time": "16:00"
+                            }
+                        }
+                    },
+                    {
+                        "data": {
+                            "id": "3",
+                            "type": "shift",
+                            "attributes": {
+                                "date": "2020-04-02",
+                                "status": "finished",
+                                "start_time": "13:00",
+                                "end_time": "14:00"
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}
