@@ -57,6 +57,6 @@ Pretty printing json as you see it in the samples is not particularly hard, but 
 
 (As you can see in my [dotfiles repo](https://github.com/profh/dotfiles) online, I did this via an include file called bash_aliases, but you can add this directly to `.bash_profile` if you want.) 
 
-That said, it might be easier for many of you to use Chrome extension [JSON Formatter](https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa) that I also used in lecture for pretty printing your json and making it more readable.
+That said, it might be easier for many of you to use Chrome extension [JSON Formatter](https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa) that I also used in lecture for pretty printing your json and making it more readable. There should be no issue running these endpoints in the browser, as was done in lecture several times.
 
 Note that our grading tool will not pretty print the json -- doing so is strictly for your convenience to make sure that you have replicated the result correctly.
