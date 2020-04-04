@@ -3,7 +3,7 @@ Creamery API :: Spring 2020
 
 Because of the challenges of remote education, the second technical challenge we have for you today is to build a basic API for the Creamery project you have been developing in 67-272 this semester.  This will cover a number of skills discussed in class related to controllers, routing and serialization.
 
-This project is being released at 12:01am EDT on Thursday, April 23, 2020 via our GitLab server at darkknight-cmuis.net and must be completed and posted back to your private repository on darkknight no later than 11:59pm EDT on the same day.  It should take all day to complete it, but given we have students throughout the world right now, a 24 hour period should allow everyone ample time to complete the technical challenge in a timely manner.
+This project is being released at 12:01am EDT on Thursday, April 23, 2020 via our GitLab server at darkknight-cmuis.net and must be completed and posted back to your private repository on darkknight no later than 11:59pm EDT on the same day.  It should not take all day to complete it, but given we have students throughout the world right now, a 24 hour period should allow everyone ample time to complete the technical challenge in a timely manner.
 
 Getting Started
 ---
@@ -35,7 +35,7 @@ Samples from each of these endpoints is provided to you in the `samples` directo
 
 Note that our testing data will differ slightly from the data we populate the database with in the `db:contexts` script and we may use different ID numbers in the endpoint call.  This will ensure that you don't simply return the sample text in the method, but actually generated it properly using serializers and controllers.
 
-In some cases there are multiple examples of the same endpoint to illustrate some differences.  For example, in the `shifts/{id}` call, we run the endpoint for both a completed shift and one that has started, but not yet finished.  In the other case we gave you multiple calls to the same endpoint, we simply gave you one where a single shift was returned and another where multiple shifts were returned to help you better understand what we are looking for.
+In some cases there are multiple examples of the same endpoint to illustrate some differences.  For example, in the `shifts/{id}` call, we run the endpoint for both a completed shift and one that has started, but not yet finished.  In the other case were we gave you multiple calls to the same endpoint, one has a single shift returned and another has multiple shifts returned to help you better understand what we are looking for.
 
 
 Constraints
@@ -60,3 +60,6 @@ Pretty printing json as you see it in the samples is not particularly hard, but 
 That said, it might be easier for many of you to use Chrome extension [JSON Formatter](https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa) that I also used in lecture for pretty printing your json and making it more readable. There should be no issue running these endpoints in the browser, as was done in lecture several times.
 
 Note that our grading tool will not pretty print the json -- doing so is strictly for your convenience to make sure that you have replicated the result correctly.
+
+---
+As always, should you or any of your IM Force be caught or killed, the Secretary will disavow any knowledge of your actions. This file will self-destruct in ten seconds. Good luck.
